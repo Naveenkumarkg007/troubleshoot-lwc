@@ -1,0 +1,32 @@
+/* we can apply external css for element h1 div p span
+calssses class .notation
+
+sudo .class:hover{
+
+}
+
+avoid ids in styling styles
+
+recommended element classes pseudo */
+
+
+p{
+    color:aqua;
+    font-size: 10px;
+    font-style:italic;
+}
+
+
+.user {
+    font-weight: bold;
+    font-size: 20px;
+    font-style: italic;
+    color: brown;
+}
+
+.user:hover {
+    font-weight: bold;
+    font-size: 30px;
+    color: red;
+    border: 5px solid royalblue;
+}

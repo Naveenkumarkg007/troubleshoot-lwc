@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title="Apex Imparative Methods" icon-name="custom:custom34">
+        <div class="slds-var-m-around_medium">
+            <lightning-input 
+            type="text" 
+            label="Search Accounts" 
+            onchange={searchHandler} 
+            value={searchKey}></lightning-input>
+        </div>
+        <div class="slds-box slds-box_xx-small">
+            <template if:true={accounts}>
+                    <template for:each={accounts} for:item="account">
+                        <div class="slds-box slds-box_xx-small" key={account.Id}>
+                            <p>Name - {account.Name}</p>
+                        </div>
+                    </template>
+            </template>
+        </div>
+    </lightning-card>
+</template>

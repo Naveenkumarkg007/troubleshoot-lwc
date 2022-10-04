@@ -1,0 +1,16 @@
+<template>
+    <form>
+        <div class="slds-var-p-top_small slds-var-p-bottom_medium slds-align_absolute-center slds-theme_default slds-text-heading_medium">
+            <b>Custom Label Example</b>
+        </div>
+        <div class="slds-box slds-theme_default">
+            <lightning-input type="email" label={label.emailAddress} value={emailAddress}></lightning-input>
+            <lightning-input type="tel" label={label.mobile} value={mobile}></lightning-input>
+
+            <div class="slds-var-p-top_small slds-align_absolute-center">
+                <lightning-button variant="neutral" label="Cancel" onclick={handleCancel} class="slds-var-p-left_x-small"></lightning-button>
+                <lightning-button variant="neutral" label="Next" onclick={handleNext} class="slds-var-p-left_x-small"></lightning-button>
+            </div>
+        </div>
+    </form>
+</template>

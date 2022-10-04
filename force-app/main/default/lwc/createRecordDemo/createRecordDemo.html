@@ -1,0 +1,14 @@
+<template>
+    <Lightning-card title="Create Record Using Lightning Adapters" icon-name="custom:custom54">
+        <div class="slds-var-p-around_medium">
+            <form class="createForm">
+                <lightning-input type="text" label="First Name" name="FirstName" onchange={changeHandler} class="slds-var-m-bottom_medium"></lightning-input>
+                <lightning-input type="text" label="Last Name" name="LastName" onchange={changeHandler} class="slds-var-m-bottom_medium"></lightning-input>
+                <lightning-input type="title" label="Title" name="Title" onchange={changeHandler} class="slds-var-m-bottom_medium"></lightning-input>
+                <lightning-input type="email" label="Email" name="Email" onchange={changeHandler} class="slds-var-m-bottom_medium"></lightning-input>
+                <lightning-input type="tel" label="Phone" name="Phone" onchange={changeHandler} class="slds-var-m-bottom_medium"></lightning-input> 
+                <lightning-button variant="brand" label="Create Contact" onclick={handleCreateContact} class="slds-var-m-around_medium"></lightning-button>
+            </form>
+        </div>
+    </Lightning-card>
+</template>

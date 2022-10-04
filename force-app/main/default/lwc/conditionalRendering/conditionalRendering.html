@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title="Conditional Rendering" icon-name= action:adjust_value>
+        <div class="slds-var-m-around_medium">
+            <lightning-button class="slds-var-m-left_x-small" label="Show Data" variant="brand" title="Show Data" onclick={handleClick}></lightning-button>
+            <template if:true={isVisible}>
+                <div>Welcome to Cloud Odyssey</div>
+            </template>
+
+            <template if:false={isVisible}>
+                <div>You can't see the data click button to see the data</div>
+            </template>
+
+            <lightning-input type="text" label="Type hello to see the data" onkeyup={changeHandler}></lightning-input>
+        <template if:true={helloMethod}>
+            <div>Hurray !! you have typed correctly</div>
+        </template>
+
+        </div>
+    </lightning-card>
+</template>

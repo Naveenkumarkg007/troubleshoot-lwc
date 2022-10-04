@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Disconnected Callback Parent" icon-name="custom:custom26">
+        <div class="slds box slds-var-m-around_medium">
+            <template if:false={isVisible}>
+                <lightning-button label="Show Child" variant="brand" onclick={handleClick} class="slds-var-m-left_small"></lightning-button>
+            </template>
+
+            <template if:true={isVisible}>
+                <lightning-button label="Remove Child" variant="brand" onclick={handleClick} class="slds-var-m-left_small"></lightning-button>
+                <c-disconnected-callback-child></c-disconnected-callback-child> 
+            </template>
+           
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shadow DOM</title>
+        <style>
+            p{
+                color:red;
+            }
+        </style>
+    </head>
+    <body>
+        <div>I am div</div>
+        <div>I am another div</div>
+        <P>I am a DOM</P>
+
+        <div id="host"></div>
+    <script>
+        const element = document.querySelector('#host');
+        const shadowRoot = element.attachShadow({mode:'open'})
+        shadowRoot.innerHTML = '<p> I am Shadow DOM </p>'
+        <!-- <p class="myClass"> So i am</p> -->
+    </script>   
+    </body>
+    
+</html>

@@ -1,0 +1,14 @@
+/* Generally we use this method */
+
+/* div{
+    color: blue;
+    background: white;
+} */
+
+/* we use this design token method for styling */
+div{
+    color: var(--lwc-brandAccessible);
+    background: var(--lwc-colorBackgroundInverse);
+    font-size: sizeXLarge;
+    font-weight: bold;
+}

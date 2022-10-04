@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title="@track properties">
+        <div class="slds-var-m-around_medium">
+            <lightning-input type="text" placeholder="Enter City Name" onkeyup={cityHandler}></lightning-input>
+            <div>My city is {address.city}</div>
+            <lightning-input type="text" placeholder="Enter Country Name" onkeyup={countryHandler}></lightning-input>
+            <div>My country is {address.country}</div>
+            <lightning-input type="number" placeholder="Enter Postal Code" onkeyup={postalCodeHandler}></lightning-input>
+            <div>My postal code is {address.postalCode}</div>
+        </div>
+    </lightning-card>
+
+
+    <lightning-card title="@track properties">
+        <div class="slds-var-m-around_medium">
+            <lightning-input type="text" placeholder="Enter Name" onkeyup={nameHandler}></lightning-input>
+            <div>My name is {student.name}</div>
+        </div>
+    </lightning-card>
+</template>

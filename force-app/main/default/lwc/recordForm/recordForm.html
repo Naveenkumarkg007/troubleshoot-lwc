@@ -1,0 +1,51 @@
+<template>
+    <lightning-card title="Create record using record form" icon-name="custom:custom44">
+        <lightning-record-form
+        object-api-name={objectName}
+        fields={fieldList}
+        onsuccess={successHandler}></lightning-record-form>
+    </lightning-card>
+
+    <lightning-card title="Dispaly record with edit mode using record form" icon-name="custom:custom45">
+        <lightning-record-form
+        record-id="0015i00000QcRVRAA3"
+        object-api-name={objectName}   
+        fields={fieldList}
+        ></lightning-record-form>
+    </lightning-card>
+
+    <lightning-card title="Dispaly record with read only using record form" icon-name="custom:custom46">
+        <lightning-record-form
+        record-id="0015i00000QcRVRAA3"
+        object-api-name={objectName}   
+        fields={fieldList}
+        mode="readonly"></lightning-record-form>
+    </lightning-card>
+
+    <lightning-card title="Edit record with columns using record form" icon-name="custom:custom46">
+        <lightning-record-form
+        record-id="0015i00000QcRVRAA3"
+        object-api-name={objectName}   
+        fields={fieldList}
+        mode="edit"
+        columns="2"></lightning-record-form> </lightning-record-form>
+    </lightning-card>
+
+    <lightning-card title="Edit record with compact layout using record form" icon-name="custom:custom46">
+        <lightning-record-form
+        record-id="0015i00000QcRVRAA3"
+        object-api-name={objectName}   
+        mode="edit"
+        columns="2"
+        layout-type="Compact"></lightning-record-form>
+    </lightning-card>
+
+    <lightning-card title="Edit record with compact layout using record form" icon-name="custom:custom46">
+        <lightning-record-form
+        record-id={recordId}
+        object-api-name={objectApiName}   
+        mode="edit"
+        columns="2"
+        layout-type="Compact"></lightning-record-form>
+    </lightning-card>
+</template>

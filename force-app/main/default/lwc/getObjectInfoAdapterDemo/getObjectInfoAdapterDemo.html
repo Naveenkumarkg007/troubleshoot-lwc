@@ -1,0 +1,25 @@
+<template>
+    <lightning-card title="get Object Info using wire adaptors" icon-name="custom:custom49">
+        <div class="slds-var-m-around_medium">
+            <template if:true={objectInfo.data}>
+                <div>Record Type ID: <strong>{objectInfo.data.defaultRecordTypeId}</strong></div>
+                <div>Object API Name: <strong>{objectInfo.data.apiName}</strong></div>
+            </template>
+        </div>
+    </lightning-card>
+
+
+
+    <lightning-card title="get Object Infos using wire adaptors multiple objects" icon-name="custom:custom50">
+        <div class="slds-var-m-around_medium">
+            <template if:true={objectInfos}>
+                <template for:each={objectInfos.results} for:item="obj">
+                    <div key={obj.result.apiName}>
+                        <div>Object Api Name - {obj.result.apiName}</div>
+                        <div>Object Record Id - {obj.result.defaultRecordTypeId}</div>
+                    </div>  
+                </template>
+            </template>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="Life Cycle Hook parent" icon-name="custom:custom25">
+        <div class="slds-box slds-var-m-around_medium" style="font-size:x-large">
+            <div>I am a parent div</div>
+            <lightning-input type="text" onkeyup={changeHandler}></lightning-input>
+            {name}
+            <c-life-cycle-child></c-life-cycle-child>
+        </div>
+    </lightning-card>
+</template>

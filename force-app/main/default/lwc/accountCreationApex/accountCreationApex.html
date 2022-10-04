@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Account Creation Using Apex Controller" icon-name="custom:custom57">
+        <form class="createForm">
+            <div class="slds-var-m-around_small">
+                <lightning-input type="text" label="Name" onchange={handleNameChange}></lightning-input>
+                <lightning-input type="text" label="Type" onchange={handleTypeChange}></lightning-input>
+                <lightning-input type="tel" label="Phone" onchange={handlePhoneChange} class="slds-var-m-bottom_small"></lightning-input>
+                <lightning-button
+                variant="brand"
+                label="Save"
+                onclick={handleSaveAccount}
+                class="slds-var-m-around_small">
+            </lightning-button>
+            </div>
+        </form>
+    </lightning-card>
+</template>

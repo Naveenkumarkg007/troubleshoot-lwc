@@ -12,7 +12,7 @@ export default class Display extends LightningElement {
   }
   
   handleAugmentorChange(event) {
-    this.augmentor = event.target.value;
+    this.augmentor = parseInt(event.target.value)
   }
 
   handleIncrement(event) {
@@ -23,5 +23,5 @@ export default class Display extends LightningElement {
   handleDecrement(event) {
     const operand = event.detail;
     this.counter -= operand;
-  }
+  } 
 }
